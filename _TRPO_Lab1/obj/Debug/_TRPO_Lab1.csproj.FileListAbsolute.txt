@@ -1,0 +1,7 @@
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\bin\Debug\_TRPO_Lab1.exe.config
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\bin\Debug\_TRPO_Lab1.exe
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\bin\Debug\_TRPO_Lab1.pdb
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\obj\Debug\_TRPO_Lab1.csprojAssemblyReference.cache
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\obj\Debug\_TRPO_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\obj\Debug\_TRPO_Lab1.exe
+C:\Users\RGN\source\repos\_TRPO_Lab1\_TRPO_Lab1\obj\Debug\_TRPO_Lab1.pdb
