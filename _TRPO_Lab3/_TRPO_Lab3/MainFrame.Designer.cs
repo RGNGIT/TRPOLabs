@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridViewEmi = new System.Windows.Forms.DataGridView();
@@ -141,32 +141,32 @@
             // 
             // chartCountry
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartCountry.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartCountry.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartCountry.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartCountry.Legends.Add(legend1);
             this.chartCountry.Location = new System.Drawing.Point(6, 205);
             this.chartCountry.Name = "chartCountry";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartCountry.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCountry.Series.Add(series1);
             this.chartCountry.Size = new System.Drawing.Size(265, 189);
             this.chartCountry.TabIndex = 1;
             this.chartCountry.Text = "chart2";
             // 
             // chartAge
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartAge.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartAge.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.chartAge.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartAge.Legends.Add(legend2);
             this.chartAge.Location = new System.Drawing.Point(6, 6);
             this.chartAge.Name = "chartAge";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartAge.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartAge.Series.Add(series2);
             this.chartAge.Size = new System.Drawing.Size(265, 189);
             this.chartAge.TabIndex = 0;
             this.chartAge.Text = "chart1";
@@ -411,7 +411,7 @@
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainFrame";
-            this.Text = "Form1";
+            this.Text = "Emigrants";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmi)).EndInit();
