@@ -8,3 +8,13 @@ C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TR
 C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.csproj.CoreCompileInputs.cache
 C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.exe
 C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.pdb
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\bin\Debug\_TRPO_Lab3.exe.config
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\bin\Debug\_TRPO_Lab3.exe
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\bin\Debug\_TRPO_Lab3.pdb
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.csprojAssemblyReference.cache
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.MainFrame.resources
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.Properties.Resources.resources
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.csproj.GenerateResource.cache
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.csproj.CoreCompileInputs.cache
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.exe
+C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab3\_TRPO_Lab3\obj\Debug\_TRPO_Lab3.pdb
