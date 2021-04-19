@@ -86,6 +86,8 @@ namespace _TRPO_Lab2
             }
             chart1.Series.Add(new Series("ExpRange")); // Создание нового чарта гистограммы и ее заполнение
             chart1.Series["ExpRange"].Points.DataBindXY(Intervals, Counters);
+            ChartArea CA = chart1.ChartAreas[0];
+            CA.AxisY.Maximum = 30;
         }
 
         void vMakePattern()
