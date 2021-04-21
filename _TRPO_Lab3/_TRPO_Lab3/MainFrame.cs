@@ -28,7 +28,6 @@ namespace _TRPO_Lab3
             dataGridViewEmi.Columns.Add("_Degree", "Ученая степень");
             dataGridViewEmi.Columns.Add("_DestCountry", "Страна назначения");
             dataGridViewEmi.Columns.Add("_ID", "Personal_ID");
-            Database.Emigrants = new List<Emigrant>();
         }
 
         List<string> Countries()
@@ -159,18 +158,34 @@ namespace _TRPO_Lab3
             }
         }
 
+        void UpdateLists()
+        {
+            comboBoxDestCountry.Items.Clear();
+            comboBoxSex.Items.Clear();
+            comboBoxNationality.Items.Clear();
+            comboBoxSP.Items.Clear();
+            comboBoxEducation.Items.Clear();
+            comboBoxDegree.Items.Clear();
+            comboBoxDestCountry.Items.AddRange(Database.Countries.ToArray());
+            comboBoxSex.Items.AddRange(Database.Gender.ToArray());
+            comboBoxNationality.Items.AddRange(Database.Nationality.ToArray());
+            comboBoxSP.Items.AddRange(Database.SP.ToArray());
+            comboBoxEducation.Items.AddRange(Database.Education.ToArray());
+            comboBoxDegree.Items.AddRange(Database.Degrees.ToArray());
+        }
+
         Emigrant AddNew(Emigrant emigrant)
         {
             emigrant.ESNF = textBoxSNF.Text;
             emigrant.EAge = Convert.ToInt32(textBoxAge.Text);
-            emigrant.ESex = textBoxSex.Text;
-            emigrant.ENationality = textBoxNation.Text;
-            emigrant.EStatus = textBoxStatus.Text;
-            emigrant.EEdu = textBoxEdu.Text;
+            // emigrant.ESex = textBoxSex.Text;
+            // emigrant.ENationality = textBoxNation.Text;
+            // emigrant.EStatus = textBoxStatus.Text;
+            // emigrant.EEdu = textBoxEdu.Text;
             emigrant.EProf = textBoxProf.Text;
             emigrant.EExp = Convert.ToInt32(textBoxExp.Text);
-            emigrant.EDegree = textBoxDegree.Text;
-            emigrant.EDCountry = textBoxDestCountry.Text;
+            // emigrant.EDegree = textBoxDegree.Text;
+            // emigrant.EDCountry = textBoxDestCountry.Text;
             return emigrant;
         }
 
@@ -189,5 +204,40 @@ namespace _TRPO_Lab3
             }
         }
 
+        private void buttonRedact_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDBAdd_Click(object sender, EventArgs e)
+        {
+            switch(comboBoxDBList.SelectedIndex)
+            {
+                case 0:
+                    Database.Countries.Add(textBoxDBAddField.Text);
+                    break;
+                case 1:
+                    Database.Gender.Add(textBoxDBAddField.Text);
+                    break;
+                case 2:
+                    Database.Nationality.Add(textBoxDBAddField.Text);
+                    break;
+                case 3:
+                    Database.SP.Add(textBoxDBAddField.Text);
+                    break;
+                case 4:
+                    Database.Education.Add(textBoxDBAddField.Text);
+                    break;
+                case 5:
+                    Database.Degrees.Add(textBoxDBAddField.Text);
+                    break;
+            }
+            UpdateLists();
+        }
     }
 }

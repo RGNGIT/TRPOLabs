@@ -28,65 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea39 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend39 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea40 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend40 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridViewEmi = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.labelCommonAge = new System.Windows.Forms.Label();
-            this.labelMostPCountry = new System.Windows.Forms.Label();
-            this.chartCountry = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartAge = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.labelError = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBoxStatus = new System.Windows.Forms.TextBox();
+            this.comboBoxSP = new System.Windows.Forms.ComboBox();
+            this.comboBoxNationality = new System.Windows.Forms.ComboBox();
+            this.comboBoxSex = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxNation = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxSex = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxAge = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxSNF = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBoxDestCountry = new System.Windows.Forms.TextBox();
+            this.comboBoxDestCountry = new System.Windows.Forms.ComboBox();
+            this.comboBoxDegree = new System.Windows.Forms.ComboBox();
+            this.comboBoxEducation = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxDegree = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxExp = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxProf = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxEdu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
-            this.labelError = new System.Windows.Forms.Label();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonRedact = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dataGridViewEmi = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.labelCommonAge = new System.Windows.Forms.Label();
+            this.labelMostPCountry = new System.Windows.Forms.Label();
+            this.chartCountry = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartAge = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxDBAddField = new System.Windows.Forms.TextBox();
+            this.comboBoxDBList = new System.Windows.Forms.ComboBox();
+            this.buttonDBAdd = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmi)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCountry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartAge)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -105,77 +118,37 @@
             this.tabPage1.Text = "Эмиграция";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewEmi
+            // tabControl3
             // 
-            this.dataGridViewEmi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmi.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewEmi.Name = "dataGridViewEmi";
-            this.dataGridViewEmi.Size = new System.Drawing.Size(517, 400);
-            this.dataGridViewEmi.TabIndex = 0;
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Location = new System.Drawing.Point(519, 0);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(260, 400);
+            this.tabControl3.TabIndex = 1;
             // 
-            // tabPage2
+            // tabPage5
             // 
-            this.tabPage2.Controls.Add(this.labelCommonAge);
-            this.tabPage2.Controls.Add(this.labelMostPCountry);
-            this.tabPage2.Controls.Add(this.chartCountry);
-            this.tabPage2.Controls.Add(this.chartAge);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(778, 406);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Отчет";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage5.Controls.Add(this.labelError);
+            this.tabPage5.Controls.Add(this.tabControl2);
+            this.tabPage5.Controls.Add(this.Add);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(252, 374);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Добавление";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // labelCommonAge
+            // labelError
             // 
-            this.labelCommonAge.AutoSize = true;
-            this.labelCommonAge.Location = new System.Drawing.Point(277, 26);
-            this.labelCommonAge.Name = "labelCommonAge";
-            this.labelCommonAge.Size = new System.Drawing.Size(96, 13);
-            this.labelCommonAge.TabIndex = 3;
-            this.labelCommonAge.Text = "$MostCommonAge";
-            // 
-            // labelMostPCountry
-            // 
-            this.labelMostPCountry.AutoSize = true;
-            this.labelMostPCountry.Location = new System.Drawing.Point(277, 6);
-            this.labelMostPCountry.Name = "labelMostPCountry";
-            this.labelMostPCountry.Size = new System.Drawing.Size(108, 13);
-            this.labelMostPCountry.TabIndex = 2;
-            this.labelMostPCountry.Text = "$MostPopularCountry";
-            // 
-            // chartCountry
-            // 
-            chartArea39.Name = "ChartArea1";
-            this.chartCountry.ChartAreas.Add(chartArea39);
-            legend39.Name = "Legend1";
-            this.chartCountry.Legends.Add(legend39);
-            this.chartCountry.Location = new System.Drawing.Point(6, 205);
-            this.chartCountry.Name = "chartCountry";
-            series39.ChartArea = "ChartArea1";
-            series39.Legend = "Legend1";
-            series39.Name = "Series1";
-            this.chartCountry.Series.Add(series39);
-            this.chartCountry.Size = new System.Drawing.Size(265, 189);
-            this.chartCountry.TabIndex = 1;
-            this.chartCountry.Text = "chart2";
-            // 
-            // chartAge
-            // 
-            chartArea40.Name = "ChartArea1";
-            this.chartAge.ChartAreas.Add(chartArea40);
-            legend40.Name = "Legend1";
-            this.chartAge.Legends.Add(legend40);
-            this.chartAge.Location = new System.Drawing.Point(6, 6);
-            this.chartAge.Name = "chartAge";
-            series40.ChartArea = "ChartArea1";
-            series40.Legend = "Legend1";
-            series40.Name = "Series1";
-            this.chartAge.Series.Add(series40);
-            this.chartAge.Size = new System.Drawing.Size(265, 189);
-            this.chartAge.TabIndex = 0;
-            this.chartAge.Text = "chart1";
+            this.labelError.AutoSize = true;
+            this.labelError.Location = new System.Drawing.Point(7, 333);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(49, 13);
+            this.labelError.TabIndex = 3;
+            this.labelError.Text = "$OnError";
             // 
             // tabControl2
             // 
@@ -189,11 +162,11 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBoxStatus);
+            this.tabPage3.Controls.Add(this.comboBoxSP);
+            this.tabPage3.Controls.Add(this.comboBoxNationality);
+            this.tabPage3.Controls.Add(this.comboBoxSex);
             this.tabPage3.Controls.Add(this.label6);
-            this.tabPage3.Controls.Add(this.textBoxNation);
             this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.textBoxSex);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.textBoxAge);
             this.tabPage3.Controls.Add(this.label2);
@@ -207,12 +180,32 @@
             this.tabPage3.Text = "Личные данные";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBoxStatus
+            // comboBoxSP
             // 
-            this.textBoxStatus.Location = new System.Drawing.Point(6, 175);
-            this.textBoxStatus.Name = "textBoxStatus";
-            this.textBoxStatus.Size = new System.Drawing.Size(240, 20);
-            this.textBoxStatus.TabIndex = 9;
+            this.comboBoxSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSP.FormattingEnabled = true;
+            this.comboBoxSP.Location = new System.Drawing.Point(6, 175);
+            this.comboBoxSP.Name = "comboBoxSP";
+            this.comboBoxSP.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxSP.TabIndex = 12;
+            // 
+            // comboBoxNationality
+            // 
+            this.comboBoxNationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxNationality.FormattingEnabled = true;
+            this.comboBoxNationality.Location = new System.Drawing.Point(6, 135);
+            this.comboBoxNationality.Name = "comboBoxNationality";
+            this.comboBoxNationality.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxNationality.TabIndex = 11;
+            // 
+            // comboBoxSex
+            // 
+            this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.Location = new System.Drawing.Point(6, 96);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxSex.TabIndex = 10;
             // 
             // label6
             // 
@@ -223,13 +216,6 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Семейное положение";
             // 
-            // textBoxNation
-            // 
-            this.textBoxNation.Location = new System.Drawing.Point(6, 136);
-            this.textBoxNation.Name = "textBoxNation";
-            this.textBoxNation.Size = new System.Drawing.Size(240, 20);
-            this.textBoxNation.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -239,21 +225,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Национальность";
             // 
-            // textBoxSex
-            // 
-            this.textBoxSex.Location = new System.Drawing.Point(6, 97);
-            this.textBoxSex.Name = "textBoxSex";
-            this.textBoxSex.Size = new System.Drawing.Size(240, 20);
-            this.textBoxSex.TabIndex = 5;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Пол";
+            this.label3.Text = "Гендер";
             // 
             // textBoxAge
             // 
@@ -289,15 +268,15 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.textBoxDestCountry);
+            this.tabPage4.Controls.Add(this.comboBoxDestCountry);
+            this.tabPage4.Controls.Add(this.comboBoxDegree);
+            this.tabPage4.Controls.Add(this.comboBoxEducation);
             this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.textBoxDegree);
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.Controls.Add(this.textBoxExp);
             this.tabPage4.Controls.Add(this.label8);
             this.tabPage4.Controls.Add(this.textBoxProf);
             this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Controls.Add(this.textBoxEdu);
             this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -307,12 +286,32 @@
             this.tabPage4.Text = "Остальное";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // textBoxDestCountry
+            // comboBoxDestCountry
             // 
-            this.textBoxDestCountry.Location = new System.Drawing.Point(6, 175);
-            this.textBoxDestCountry.Name = "textBoxDestCountry";
-            this.textBoxDestCountry.Size = new System.Drawing.Size(240, 20);
-            this.textBoxDestCountry.TabIndex = 18;
+            this.comboBoxDestCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDestCountry.FormattingEnabled = true;
+            this.comboBoxDestCountry.Location = new System.Drawing.Point(6, 175);
+            this.comboBoxDestCountry.Name = "comboBoxDestCountry";
+            this.comboBoxDestCountry.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxDestCountry.TabIndex = 21;
+            // 
+            // comboBoxDegree
+            // 
+            this.comboBoxDegree.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDegree.FormattingEnabled = true;
+            this.comboBoxDegree.Location = new System.Drawing.Point(6, 136);
+            this.comboBoxDegree.Name = "comboBoxDegree";
+            this.comboBoxDegree.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxDegree.TabIndex = 20;
+            // 
+            // comboBoxEducation
+            // 
+            this.comboBoxEducation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEducation.FormattingEnabled = true;
+            this.comboBoxEducation.Location = new System.Drawing.Point(6, 19);
+            this.comboBoxEducation.Name = "comboBoxEducation";
+            this.comboBoxEducation.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxEducation.TabIndex = 19;
             // 
             // label10
             // 
@@ -322,13 +321,6 @@
             this.label10.Size = new System.Drawing.Size(105, 13);
             this.label10.TabIndex = 17;
             this.label10.Text = "Страна назначения";
-            // 
-            // textBoxDegree
-            // 
-            this.textBoxDegree.Location = new System.Drawing.Point(6, 136);
-            this.textBoxDegree.Name = "textBoxDegree";
-            this.textBoxDegree.Size = new System.Drawing.Size(240, 20);
-            this.textBoxDegree.TabIndex = 16;
             // 
             // label9
             // 
@@ -371,13 +363,6 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Профессия";
             // 
-            // textBoxEdu
-            // 
-            this.textBoxEdu.Location = new System.Drawing.Point(6, 19);
-            this.textBoxEdu.Name = "textBoxEdu";
-            this.textBoxEdu.Size = new System.Drawing.Size(240, 20);
-            this.textBoxEdu.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -397,40 +382,11 @@
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // labelError
-            // 
-            this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(7, 333);
-            this.labelError.Name = "labelError";
-            this.labelError.Size = new System.Drawing.Size(49, 13);
-            this.labelError.TabIndex = 3;
-            this.labelError.Text = "$OnError";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage5);
-            this.tabControl3.Controls.Add(this.tabPage6);
-            this.tabControl3.Location = new System.Drawing.Point(519, 0);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(260, 400);
-            this.tabControl3.TabIndex = 1;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.labelError);
-            this.tabPage5.Controls.Add(this.tabControl2);
-            this.tabPage5.Controls.Add(this.Add);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(252, 374);
-            this.tabPage5.TabIndex = 0;
-            this.tabPage5.Text = "Добавление";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.buttonDelete);
+            this.tabPage6.Controls.Add(this.buttonRedact);
+            this.tabPage6.Controls.Add(this.label11);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -438,6 +394,174 @@
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "Редактировать/Удалить";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.ForeColor = System.Drawing.Color.Red;
+            this.buttonDelete.Location = new System.Drawing.Point(6, 316);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(240, 23);
+            this.buttonDelete.TabIndex = 6;
+            this.buttonDelete.Text = "Удалить";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonRedact
+            // 
+            this.buttonRedact.Location = new System.Drawing.Point(6, 345);
+            this.buttonRedact.Name = "buttonRedact";
+            this.buttonRedact.Size = new System.Drawing.Size(240, 23);
+            this.buttonRedact.TabIndex = 5;
+            this.buttonRedact.Text = "Редактировать";
+            this.buttonRedact.UseVisualStyleBackColor = true;
+            this.buttonRedact.Click += new System.EventHandler(this.buttonRedact_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(0, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(203, 13);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Выберите запись в списке и действие";
+            // 
+            // dataGridViewEmi
+            // 
+            this.dataGridViewEmi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmi.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewEmi.Name = "dataGridViewEmi";
+            this.dataGridViewEmi.Size = new System.Drawing.Size(517, 400);
+            this.dataGridViewEmi.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.labelCommonAge);
+            this.tabPage2.Controls.Add(this.labelMostPCountry);
+            this.tabPage2.Controls.Add(this.chartCountry);
+            this.tabPage2.Controls.Add(this.chartAge);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(778, 400);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Отчет";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // labelCommonAge
+            // 
+            this.labelCommonAge.AutoSize = true;
+            this.labelCommonAge.Location = new System.Drawing.Point(277, 26);
+            this.labelCommonAge.Name = "labelCommonAge";
+            this.labelCommonAge.Size = new System.Drawing.Size(96, 13);
+            this.labelCommonAge.TabIndex = 3;
+            this.labelCommonAge.Text = "$MostCommonAge";
+            // 
+            // labelMostPCountry
+            // 
+            this.labelMostPCountry.AutoSize = true;
+            this.labelMostPCountry.Location = new System.Drawing.Point(277, 6);
+            this.labelMostPCountry.Name = "labelMostPCountry";
+            this.labelMostPCountry.Size = new System.Drawing.Size(108, 13);
+            this.labelMostPCountry.TabIndex = 2;
+            this.labelMostPCountry.Text = "$MostPopularCountry";
+            // 
+            // chartCountry
+            // 
+            chartArea9.Name = "ChartArea1";
+            this.chartCountry.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chartCountry.Legends.Add(legend9);
+            this.chartCountry.Location = new System.Drawing.Point(6, 205);
+            this.chartCountry.Name = "chartCountry";
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chartCountry.Series.Add(series9);
+            this.chartCountry.Size = new System.Drawing.Size(265, 189);
+            this.chartCountry.TabIndex = 1;
+            this.chartCountry.Text = "chart2";
+            // 
+            // chartAge
+            // 
+            chartArea10.Name = "ChartArea1";
+            this.chartAge.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chartAge.Legends.Add(legend10);
+            this.chartAge.Location = new System.Drawing.Point(6, 6);
+            this.chartAge.Name = "chartAge";
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chartAge.Series.Add(series10);
+            this.chartAge.Size = new System.Drawing.Size(265, 189);
+            this.chartAge.TabIndex = 0;
+            this.chartAge.Text = "chart1";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.buttonDBAdd);
+            this.tabPage7.Controls.Add(this.comboBoxDBList);
+            this.tabPage7.Controls.Add(this.label12);
+            this.tabPage7.Controls.Add(this.textBoxDBAddField);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(778, 400);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Управление БД";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 7);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Добавление значения";
+            // 
+            // textBoxDBAddField
+            // 
+            this.textBoxDBAddField.Location = new System.Drawing.Point(6, 23);
+            this.textBoxDBAddField.Name = "textBoxDBAddField";
+            this.textBoxDBAddField.Size = new System.Drawing.Size(240, 20);
+            this.textBoxDBAddField.TabIndex = 13;
+            // 
+            // comboBoxDBList
+            // 
+            this.comboBoxDBList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDBList.FormattingEnabled = true;
+            this.comboBoxDBList.Items.AddRange(new object[] {
+            "Страна",
+            "Гендер",
+            "Национальность",
+            "Семейное положение",
+            "Образование",
+            "Научная степень"});
+            this.comboBoxDBList.Location = new System.Drawing.Point(6, 49);
+            this.comboBoxDBList.Name = "comboBoxDBList";
+            this.comboBoxDBList.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxDBList.TabIndex = 15;
+            // 
+            // buttonDBAdd
+            // 
+            this.buttonDBAdd.Location = new System.Drawing.Point(6, 76);
+            this.buttonDBAdd.Name = "buttonDBAdd";
+            this.buttonDBAdd.Size = new System.Drawing.Size(240, 23);
+            this.buttonDBAdd.TabIndex = 16;
+            this.buttonDBAdd.Text = "Добавить";
+            this.buttonDBAdd.UseVisualStyleBackColor = true;
+            this.buttonDBAdd.Click += new System.EventHandler(this.buttonDBAdd_Click);
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(778, 400);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "Помощь";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // MainFrame
             // 
@@ -450,19 +574,23 @@
             this.Text = "Emigrants";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmi)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartCountry)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartAge)).EndInit();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmi)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCountry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartAge)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -482,22 +610,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxSNF;
         private System.Windows.Forms.TextBox textBoxAge;
-        private System.Windows.Forms.TextBox textBoxSex;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxNation;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxStatus;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxEdu;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxProf;
         private System.Windows.Forms.TextBox textBoxExp;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBoxDegree;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxDestCountry;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCountry;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartAge;
         private System.Windows.Forms.Label labelCommonAge;
@@ -505,6 +627,21 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonRedact;
+        private System.Windows.Forms.ComboBox comboBoxSex;
+        private System.Windows.Forms.ComboBox comboBoxSP;
+        private System.Windows.Forms.ComboBox comboBoxNationality;
+        private System.Windows.Forms.ComboBox comboBoxDestCountry;
+        private System.Windows.Forms.ComboBox comboBoxDegree;
+        private System.Windows.Forms.ComboBox comboBoxEducation;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxDBAddField;
+        private System.Windows.Forms.ComboBox comboBoxDBList;
+        private System.Windows.Forms.Button buttonDBAdd;
+        private System.Windows.Forms.TabPage tabPage8;
     }
 }
 
