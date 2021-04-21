@@ -27,15 +27,14 @@ namespace _TRPO_Lab3
             dataGridViewEmi.Columns.Add("_Exp", "Стаж");
             dataGridViewEmi.Columns.Add("_Degree", "Ученая степень");
             dataGridViewEmi.Columns.Add("_DestCountry", "Страна назначения");
-            Emigrants = new List<Emigrant>();
+            dataGridViewEmi.Columns.Add("_ID", "Personal_ID");
+            Database.Emigrants = new List<Emigrant>();
         }
-
-        List<Emigrant> Emigrants;
 
         List<string> Countries()
         {
             List<string> Temp = new List<string>();
-            foreach(Emigrant i in Emigrants)
+            foreach(Emigrant i in Database.Emigrants)
             {
                 if(!Temp.Contains(i.EDCountry))
                 {
@@ -61,7 +60,7 @@ namespace _TRPO_Lab3
         {
             int[] Ages = new int[3];
             string[] AgeStrings = new string[3] {"20-30", "31-40", "41+"};
-            foreach(Emigrant i in Emigrants)
+            foreach(Emigrant i in Database.Emigrants)
             {
                 if (i.EAge >= 20 && i.EAge <= 30)
                 {
@@ -84,7 +83,7 @@ namespace _TRPO_Lab3
             int[] CountriesAmount = new int[Countries().Count];
             for(int i = 0; i < Countries().Count; i++)
             {
-                foreach(Emigrant emigrant in Emigrants)
+                foreach(Emigrant emigrant in Database.Emigrants)
                 {
                     if(emigrant.EDCountry == Countries()[i])
                     {
@@ -121,7 +120,7 @@ namespace _TRPO_Lab3
             int Current = 0;
             foreach(string i in Countries())
             {
-                foreach(Emigrant j in Emigrants)
+                foreach(Emigrant j in Database.Emigrants)
                 {
                     if(j.EDCountry == i)
                     {
@@ -133,7 +132,7 @@ namespace _TRPO_Lab3
             chartCountry.Series["Country"].Points.DataBindXY(Countries(), CountriesCount);
             // 20-30 / 31-40 / 41+
             int[] AgesCount = new int[3];
-            foreach(Emigrant i in Emigrants)
+            foreach(Emigrant i in Database.Emigrants)
             {
                 if(i.EAge >= 20 && i.EAge <= 30)
                 {
@@ -154,7 +153,7 @@ namespace _TRPO_Lab3
         void UpdateGridData()
         {
             dataGridViewEmi.Rows.Clear();
-            foreach(Emigrant i in Emigrants)
+            foreach(Emigrant i in Database.Emigrants)
             {
                 dataGridViewEmi.Rows.Add(i.ESNF, i.EAge, i.ESex, i.ENationality, i.EStatus, i.EEdu, i.EProf, i.EExp, i.EDegree, i.EDCountry);
             }
@@ -179,7 +178,7 @@ namespace _TRPO_Lab3
         {
             try
             {
-                Emigrants.Add(AddNew(new Emigrant()));
+                Database.Emigrants.Add(AddNew(new Emigrant()));
                 UpdateGridData();
                 MostCalculate();
                 ChartWorks();

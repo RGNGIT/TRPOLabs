@@ -2,7 +2,7 @@
 
 namespace _TRPO_Lab3
 {
-    class Emigrant
+    public class Emigrant
     {
         private string SNF;
         private int Age;
@@ -14,6 +14,20 @@ namespace _TRPO_Lab3
         private int Exp;
         private string Degree;
         private string DestCountry;
+
+        private int ID;
+
+        public int EID
+        {
+            get
+            {
+                return this.ID;
+            }
+            set
+            {
+                this.ID = value is int ? value : -1;
+            }
+        }
 
         public string ESNF
         {

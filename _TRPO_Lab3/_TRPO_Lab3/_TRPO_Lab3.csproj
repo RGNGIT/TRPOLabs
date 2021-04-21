@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database.cs" />
     <Compile Include="Emigrant.cs" />
     <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>

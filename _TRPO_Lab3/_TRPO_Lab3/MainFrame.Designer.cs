@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea39 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend39 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea40 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend40 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridViewEmi = new System.Windows.Forms.DataGridView();
@@ -67,6 +67,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmi)).BeginInit();
@@ -76,6 +79,8 @@
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -85,18 +90,19 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(527, 426);
+            this.tabControl1.Size = new System.Drawing.Size(786, 426);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.tabControl3);
             this.tabPage1.Controls.Add(this.dataGridViewEmi);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(519, 400);
+            this.tabPage1.Size = new System.Drawing.Size(778, 400);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Список";
+            this.tabPage1.Text = "Эмиграция";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridViewEmi
@@ -104,7 +110,7 @@
             this.dataGridViewEmi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmi.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewEmi.Name = "dataGridViewEmi";
-            this.dataGridViewEmi.Size = new System.Drawing.Size(519, 400);
+            this.dataGridViewEmi.Size = new System.Drawing.Size(517, 400);
             this.dataGridViewEmi.TabIndex = 0;
             // 
             // tabPage2
@@ -116,9 +122,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(519, 400);
+            this.tabPage2.Size = new System.Drawing.Size(778, 406);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Анализ";
+            this.tabPage2.Text = "Отчет";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // labelCommonAge
@@ -141,32 +147,32 @@
             // 
             // chartCountry
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartCountry.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartCountry.Legends.Add(legend1);
+            chartArea39.Name = "ChartArea1";
+            this.chartCountry.ChartAreas.Add(chartArea39);
+            legend39.Name = "Legend1";
+            this.chartCountry.Legends.Add(legend39);
             this.chartCountry.Location = new System.Drawing.Point(6, 205);
             this.chartCountry.Name = "chartCountry";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartCountry.Series.Add(series1);
+            series39.ChartArea = "ChartArea1";
+            series39.Legend = "Legend1";
+            series39.Name = "Series1";
+            this.chartCountry.Series.Add(series39);
             this.chartCountry.Size = new System.Drawing.Size(265, 189);
             this.chartCountry.TabIndex = 1;
             this.chartCountry.Text = "chart2";
             // 
             // chartAge
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartAge.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartAge.Legends.Add(legend2);
+            chartArea40.Name = "ChartArea1";
+            this.chartAge.ChartAreas.Add(chartArea40);
+            legend40.Name = "Legend1";
+            this.chartAge.Legends.Add(legend40);
             this.chartAge.Location = new System.Drawing.Point(6, 6);
             this.chartAge.Name = "chartAge";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartAge.Series.Add(series2);
+            series40.ChartArea = "ChartArea1";
+            series40.Legend = "Legend1";
+            series40.Name = "Series1";
+            this.chartAge.Series.Add(series40);
             this.chartAge.Size = new System.Drawing.Size(265, 189);
             this.chartAge.TabIndex = 0;
             this.chartAge.Text = "chart1";
@@ -175,10 +181,10 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(541, 12);
+            this.tabControl2.Location = new System.Drawing.Point(-4, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(247, 385);
+            this.tabControl2.Size = new System.Drawing.Size(260, 330);
             this.tabControl2.TabIndex = 1;
             // 
             // tabPage3
@@ -196,7 +202,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(239, 359);
+            this.tabPage3.Size = new System.Drawing.Size(252, 304);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Личные данные";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -205,7 +211,7 @@
             // 
             this.textBoxStatus.Location = new System.Drawing.Point(6, 175);
             this.textBoxStatus.Name = "textBoxStatus";
-            this.textBoxStatus.Size = new System.Drawing.Size(227, 20);
+            this.textBoxStatus.Size = new System.Drawing.Size(240, 20);
             this.textBoxStatus.TabIndex = 9;
             // 
             // label6
@@ -221,7 +227,7 @@
             // 
             this.textBoxNation.Location = new System.Drawing.Point(6, 136);
             this.textBoxNation.Name = "textBoxNation";
-            this.textBoxNation.Size = new System.Drawing.Size(227, 20);
+            this.textBoxNation.Size = new System.Drawing.Size(240, 20);
             this.textBoxNation.TabIndex = 7;
             // 
             // label4
@@ -237,7 +243,7 @@
             // 
             this.textBoxSex.Location = new System.Drawing.Point(6, 97);
             this.textBoxSex.Name = "textBoxSex";
-            this.textBoxSex.Size = new System.Drawing.Size(227, 20);
+            this.textBoxSex.Size = new System.Drawing.Size(240, 20);
             this.textBoxSex.TabIndex = 5;
             // 
             // label3
@@ -253,7 +259,7 @@
             // 
             this.textBoxAge.Location = new System.Drawing.Point(6, 58);
             this.textBoxAge.Name = "textBoxAge";
-            this.textBoxAge.Size = new System.Drawing.Size(227, 20);
+            this.textBoxAge.Size = new System.Drawing.Size(240, 20);
             this.textBoxAge.TabIndex = 3;
             // 
             // label2
@@ -278,7 +284,7 @@
             // 
             this.textBoxSNF.Location = new System.Drawing.Point(6, 19);
             this.textBoxSNF.Name = "textBoxSNF";
-            this.textBoxSNF.Size = new System.Drawing.Size(227, 20);
+            this.textBoxSNF.Size = new System.Drawing.Size(240, 20);
             this.textBoxSNF.TabIndex = 0;
             // 
             // tabPage4
@@ -296,7 +302,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(239, 359);
+            this.tabPage4.Size = new System.Drawing.Size(252, 304);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Остальное";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -305,7 +311,7 @@
             // 
             this.textBoxDestCountry.Location = new System.Drawing.Point(6, 175);
             this.textBoxDestCountry.Name = "textBoxDestCountry";
-            this.textBoxDestCountry.Size = new System.Drawing.Size(227, 20);
+            this.textBoxDestCountry.Size = new System.Drawing.Size(240, 20);
             this.textBoxDestCountry.TabIndex = 18;
             // 
             // label10
@@ -321,7 +327,7 @@
             // 
             this.textBoxDegree.Location = new System.Drawing.Point(6, 136);
             this.textBoxDegree.Name = "textBoxDegree";
-            this.textBoxDegree.Size = new System.Drawing.Size(227, 20);
+            this.textBoxDegree.Size = new System.Drawing.Size(240, 20);
             this.textBoxDegree.TabIndex = 16;
             // 
             // label9
@@ -337,7 +343,7 @@
             // 
             this.textBoxExp.Location = new System.Drawing.Point(6, 97);
             this.textBoxExp.Name = "textBoxExp";
-            this.textBoxExp.Size = new System.Drawing.Size(227, 20);
+            this.textBoxExp.Size = new System.Drawing.Size(240, 20);
             this.textBoxExp.TabIndex = 14;
             // 
             // label8
@@ -353,7 +359,7 @@
             // 
             this.textBoxProf.Location = new System.Drawing.Point(6, 58);
             this.textBoxProf.Name = "textBoxProf";
-            this.textBoxProf.Size = new System.Drawing.Size(227, 20);
+            this.textBoxProf.Size = new System.Drawing.Size(240, 20);
             this.textBoxProf.TabIndex = 12;
             // 
             // label7
@@ -369,7 +375,7 @@
             // 
             this.textBoxEdu.Location = new System.Drawing.Point(6, 19);
             this.textBoxEdu.Name = "textBoxEdu";
-            this.textBoxEdu.Size = new System.Drawing.Size(227, 20);
+            this.textBoxEdu.Size = new System.Drawing.Size(240, 20);
             this.textBoxEdu.TabIndex = 10;
             // 
             // label5
@@ -383,9 +389,9 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(541, 415);
+            this.Add.Location = new System.Drawing.Point(6, 349);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(247, 23);
+            this.Add.Size = new System.Drawing.Size(240, 23);
             this.Add.TabIndex = 2;
             this.Add.Text = "Добавить";
             this.Add.UseVisualStyleBackColor = true;
@@ -394,20 +400,50 @@
             // labelError
             // 
             this.labelError.AutoSize = true;
-            this.labelError.Location = new System.Drawing.Point(541, 400);
+            this.labelError.Location = new System.Drawing.Point(7, 333);
             this.labelError.Name = "labelError";
             this.labelError.Size = new System.Drawing.Size(49, 13);
             this.labelError.TabIndex = 3;
             this.labelError.Text = "$OnError";
             // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage5);
+            this.tabControl3.Controls.Add(this.tabPage6);
+            this.tabControl3.Location = new System.Drawing.Point(519, 0);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(260, 400);
+            this.tabControl3.TabIndex = 1;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.labelError);
+            this.tabPage5.Controls.Add(this.tabControl2);
+            this.tabPage5.Controls.Add(this.Add);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(252, 374);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Добавление";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(252, 374);
+            this.tabPage6.TabIndex = 1;
+            this.tabPage6.Text = "Редактировать/Удалить";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // MainFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelError);
-            this.Controls.Add(this.Add);
-            this.Controls.Add(this.tabControl2);
+            this.ClientSize = new System.Drawing.Size(806, 445);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainFrame";
@@ -424,8 +460,10 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -464,6 +502,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartAge;
         private System.Windows.Forms.Label labelCommonAge;
         private System.Windows.Forms.Label labelMostPCountry;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
     }
 }
 
