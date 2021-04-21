@@ -154,7 +154,7 @@ namespace _TRPO_Lab3
             dataGridViewEmi.Rows.Clear();
             foreach(Emigrant i in Database.Emigrants)
             {
-                dataGridViewEmi.Rows.Add(i.ESNF, i.EAge, i.ESex, i.ENationality, i.EStatus, i.EEdu, i.EProf, i.EExp, i.EDegree, i.EDCountry);
+                dataGridViewEmi.Rows.Add(i.ESNF, i.EAge, i.ESex, i.ENationality, i.EStatus, i.EEdu, i.EProf, i.EExp, i.EDegree, i.EDCountry, i.EID);
             }
         }
 
@@ -178,14 +178,15 @@ namespace _TRPO_Lab3
         {
             emigrant.ESNF = textBoxSNF.Text;
             emigrant.EAge = Convert.ToInt32(textBoxAge.Text);
-            // emigrant.ESex = textBoxSex.Text;
-            // emigrant.ENationality = textBoxNation.Text;
-            // emigrant.EStatus = textBoxStatus.Text;
-            // emigrant.EEdu = textBoxEdu.Text;
+            emigrant.ESex = (string)comboBoxSex.SelectedItem;
+            emigrant.ENationality = (string)comboBoxNationality.SelectedItem;
+            emigrant.EStatus = (string)comboBoxSP.SelectedItem;
+            emigrant.EEdu = (string)comboBoxEducation.SelectedItem;
             emigrant.EProf = textBoxProf.Text;
             emigrant.EExp = Convert.ToInt32(textBoxExp.Text);
-            // emigrant.EDegree = textBoxDegree.Text;
-            // emigrant.EDCountry = textBoxDestCountry.Text;
+            emigrant.EDegree = (string)comboBoxDegree.SelectedItem;
+            emigrant.EDCountry = (string)comboBoxDestCountry.SelectedItem;
+            emigrant.EID = Database.PersonalID;
             return emigrant;
         }
 
@@ -194,6 +195,7 @@ namespace _TRPO_Lab3
             try
             {
                 Database.Emigrants.Add(AddNew(new Emigrant()));
+                Database.PersonalID++;
                 UpdateGridData();
                 MostCalculate();
                 ChartWorks();
@@ -211,7 +213,17 @@ namespace _TRPO_Lab3
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-
+            int Index = 0;
+            foreach(Emigrant i in Database.Emigrants)
+            {
+                if (i.EID == (int)dataGridViewEmi.SelectedRows[0].Cells[10].Value)
+                {
+                    break;
+                }
+                Index++;
+            }
+            Database.Emigrants.RemoveAt(Index);
+            UpdateGridData();
         }
 
         private void buttonDBAdd_Click(object sender, EventArgs e)

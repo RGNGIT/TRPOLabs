@@ -9,6 +9,8 @@ namespace _TRPO_Lab3
     public static class Database
     {
 
+        public static int PersonalID = 0; // Счетчик персональных идешников
+
         public static List<Emigrant> Emigrants = new List<Emigrant>(); // База эмигрантов
 
         public static List<string> Countries = new List<string>(); // База стран
