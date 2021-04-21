@@ -14,6 +14,8 @@ namespace _TRPO_Lab3
             InitializeComponent();
             chartAge.Series.Clear();
             chartCountry.Series.Clear();
+            textBoxRedBox.Visible = false;
+            comboBoxRedList.Visible = false;
             labelError.Text = String.Empty;
             labelCommonAge.Text = String.Empty;
             labelMostPCountry.Text = String.Empty;
@@ -208,7 +210,91 @@ namespace _TRPO_Lab3
 
         private void buttonRedact_Click(object sender, EventArgs e)
         {
+            switch(CellID)
+            {
+                case 0:
+                    Database.Emigrants[RedIndex].ESNF = textBoxRedBox.Text;
+                    break;
+                case 1:
+                    Database.Emigrants[RedIndex].EAge = int.Parse(textBoxRedBox.Text);
+                    break;
+                case 2:
+                    Database.Emigrants[RedIndex].ESex = (string)comboBoxRedList.SelectedItem;
+                    break;
+                case 3:
+                    Database.Emigrants[RedIndex].ENationality = (string)comboBoxRedList.SelectedItem;
+                    break;
+                case 4:
+                    Database.Emigrants[RedIndex].EStatus = (string)comboBoxRedList.SelectedItem;
+                    break;
+                case 5:
+                    Database.Emigrants[RedIndex].EEdu = (string)comboBoxRedList.SelectedItem;
+                    break;
+                case 6:
+                    Database.Emigrants[RedIndex].EProf = textBoxRedBox.Text;
+                    break;
+                case 7:
+                    Database.Emigrants[RedIndex].EExp = int.Parse(textBoxRedBox.Text);
+                    break;
+                case 8:
+                    Database.Emigrants[RedIndex].EDegree = (string)comboBoxRedList.SelectedItem;
+                    break;
+                case 9:
+                    Database.Emigrants[RedIndex].EDCountry = (string)comboBoxRedList.SelectedItem;
+                    break;
+            }
+            UpdateGridData();
+            MostCalculate();
+            ChartWorks();
+        }
 
+        int RedIndex, CellID;
+
+        private void dataGridViewEmi_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int Index = 0;
+            if(e.ColumnIndex == 0 || e.ColumnIndex == 1 || e.ColumnIndex == 6 || e.ColumnIndex == 7)
+            {
+                textBoxRedBox.Visible = true;
+                comboBoxRedList.Visible = false;
+            }
+            else
+            {
+                textBoxRedBox.Visible = false;
+                comboBoxRedList.Visible = true;
+                comboBoxRedList.Items.Clear();
+                switch(e.ColumnIndex)
+                {
+                    case 2:
+                        comboBoxRedList.Items.AddRange(Database.Gender.ToArray());
+                        break;
+                    case 3:
+                        comboBoxRedList.Items.AddRange(Database.Nationality.ToArray());
+                        break;
+                    case 4:
+                        comboBoxRedList.Items.AddRange(Database.SP.ToArray());
+                        break;
+                    case 5:
+                        comboBoxRedList.Items.AddRange(Database.Education.ToArray());
+                        break;
+                    case 8:
+                        comboBoxRedList.Items.AddRange(Database.Degrees.ToArray());
+                        break;
+                    case 9:
+                        comboBoxRedList.Items.AddRange(Database.Countries.ToArray());
+                        break;
+                }
+            }
+            foreach(Emigrant i in Database.Emigrants)
+            {
+                if(i.EID == (int)dataGridViewEmi.Rows[e.RowIndex].Cells[10].Value)
+                {
+                    break;
+                }
+                Index++;
+            }
+            RedIndex = Index;
+            CellID = e.ColumnIndex;
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -224,6 +310,8 @@ namespace _TRPO_Lab3
             }
             Database.Emigrants.RemoveAt(Index);
             UpdateGridData();
+            MostCalculate();
+            ChartWorks();
         }
 
         private void buttonDBAdd_Click(object sender, EventArgs e)
@@ -251,5 +339,6 @@ namespace _TRPO_Lab3
             }
             UpdateLists();
         }
+
     }
 }
