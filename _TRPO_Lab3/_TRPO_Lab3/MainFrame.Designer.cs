@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -64,6 +64,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Add = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.textBoxRedBox = new System.Windows.Forms.TextBox();
+            this.comboBoxRedList = new System.Windows.Forms.ComboBox();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonRedact = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -79,8 +81,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxDBAddField = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.comboBoxRedList = new System.Windows.Forms.ComboBox();
-            this.textBoxRedBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridViewDBTable = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -94,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartCountry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartAge)).BeginInit();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDBTable)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -399,6 +402,22 @@
             this.tabPage6.Text = "Редактировать/Удалить";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // textBoxRedBox
+            // 
+            this.textBoxRedBox.Location = new System.Drawing.Point(6, 19);
+            this.textBoxRedBox.Name = "textBoxRedBox";
+            this.textBoxRedBox.Size = new System.Drawing.Size(240, 20);
+            this.textBoxRedBox.TabIndex = 12;
+            // 
+            // comboBoxRedList
+            // 
+            this.comboBoxRedList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRedList.FormattingEnabled = true;
+            this.comboBoxRedList.Location = new System.Drawing.Point(6, 19);
+            this.comboBoxRedList.Name = "comboBoxRedList";
+            this.comboBoxRedList.Size = new System.Drawing.Size(240, 21);
+            this.comboBoxRedList.TabIndex = 11;
+            // 
             // buttonDelete
             // 
             this.buttonDelete.ForeColor = System.Drawing.Color.Red;
@@ -472,38 +491,40 @@
             // 
             // chartCountry
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartCountry.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chartCountry.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.chartCountry.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartCountry.Legends.Add(legend1);
             this.chartCountry.Location = new System.Drawing.Point(6, 205);
             this.chartCountry.Name = "chartCountry";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chartCountry.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCountry.Series.Add(series1);
             this.chartCountry.Size = new System.Drawing.Size(265, 189);
             this.chartCountry.TabIndex = 1;
             this.chartCountry.Text = "chart2";
             // 
             // chartAge
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartAge.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartAge.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chartAge.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartAge.Legends.Add(legend2);
             this.chartAge.Location = new System.Drawing.Point(6, 6);
             this.chartAge.Name = "chartAge";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chartAge.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartAge.Series.Add(series2);
             this.chartAge.Size = new System.Drawing.Size(265, 189);
             this.chartAge.TabIndex = 0;
             this.chartAge.Text = "chart1";
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.dataGridViewDBTable);
+            this.tabPage7.Controls.Add(this.label13);
             this.tabPage7.Controls.Add(this.buttonDBAdd);
             this.tabPage7.Controls.Add(this.comboBoxDBList);
             this.tabPage7.Controls.Add(this.label12);
@@ -513,12 +534,12 @@
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage7.Size = new System.Drawing.Size(778, 400);
             this.tabPage7.TabIndex = 2;
-            this.tabPage7.Text = "Управление БД";
+            this.tabPage7.Text = "Справочник";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // buttonDBAdd
             // 
-            this.buttonDBAdd.Location = new System.Drawing.Point(6, 76);
+            this.buttonDBAdd.Location = new System.Drawing.Point(6, 89);
             this.buttonDBAdd.Name = "buttonDBAdd";
             this.buttonDBAdd.Size = new System.Drawing.Size(240, 23);
             this.buttonDBAdd.TabIndex = 16;
@@ -537,19 +558,20 @@
             "Семейное положение",
             "Образование",
             "Научная степень"});
-            this.comboBoxDBList.Location = new System.Drawing.Point(6, 49);
+            this.comboBoxDBList.Location = new System.Drawing.Point(6, 62);
             this.comboBoxDBList.Name = "comboBoxDBList";
             this.comboBoxDBList.Size = new System.Drawing.Size(240, 21);
             this.comboBoxDBList.TabIndex = 15;
+            this.comboBoxDBList.SelectedIndexChanged += new System.EventHandler(this.comboBoxDBList_SelectedIndexChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(3, 7);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 13);
+            this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 14;
-            this.label12.Text = "Добавление значения";
+            this.label12.Text = "Значение";
             // 
             // textBoxDBAddField
             // 
@@ -568,21 +590,22 @@
             this.tabPage8.Text = "Помощь";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // comboBoxRedList
+            // label13
             // 
-            this.comboBoxRedList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxRedList.FormattingEnabled = true;
-            this.comboBoxRedList.Location = new System.Drawing.Point(6, 19);
-            this.comboBoxRedList.Name = "comboBoxRedList";
-            this.comboBoxRedList.Size = new System.Drawing.Size(240, 21);
-            this.comboBoxRedList.TabIndex = 11;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 46);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(50, 13);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Таблица";
             // 
-            // textBoxRedBox
+            // dataGridViewDBTable
             // 
-            this.textBoxRedBox.Location = new System.Drawing.Point(6, 19);
-            this.textBoxRedBox.Name = "textBoxRedBox";
-            this.textBoxRedBox.Size = new System.Drawing.Size(240, 20);
-            this.textBoxRedBox.TabIndex = 12;
+            this.dataGridViewDBTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDBTable.Location = new System.Drawing.Point(252, 0);
+            this.dataGridViewDBTable.Name = "dataGridViewDBTable";
+            this.dataGridViewDBTable.Size = new System.Drawing.Size(526, 400);
+            this.dataGridViewDBTable.TabIndex = 18;
             // 
             // MainFrame
             // 
@@ -612,6 +635,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartAge)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDBTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -665,6 +689,8 @@
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TextBox textBoxRedBox;
         private System.Windows.Forms.ComboBox comboBoxRedList;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridViewDBTable;
     }
 }
 

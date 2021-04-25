@@ -19,6 +19,7 @@ namespace _TRPO_Lab3
             labelError.Text = String.Empty;
             labelCommonAge.Text = String.Empty;
             labelMostPCountry.Text = String.Empty;
+            dataGridViewDBTable.Columns.Add("_value", "Значение");
             dataGridViewEmi.Columns.Add("_SNF", "ФИО");
             dataGridViewEmi.Columns.Add("_Age", "Возраст");
             dataGridViewEmi.Columns.Add("_Sex", "Пол");
@@ -338,6 +339,56 @@ namespace _TRPO_Lab3
                     break;
             }
             UpdateLists();
+            UpdateTabList();
+        }
+
+        void UpdateTabList()
+        {
+            dataGridViewDBTable.Rows.Clear();
+            switch (comboBoxDBList.SelectedIndex)
+            {
+                case 0:
+                    foreach (var i in Database.Countries)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+                case 1:
+                    foreach (var i in Database.Gender)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+                case 2:
+                    foreach (var i in Database.Nationality)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+                case 3:
+                    foreach (var i in Database.SP)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+                case 4:
+                    foreach (var i in Database.Education)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+                case 5:
+                    foreach (var i in Database.Degrees)
+                    {
+                        dataGridViewDBTable.Rows.Add(i);
+                    }
+                    break;
+            }
+        }
+
+        private void comboBoxDBList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateTabList();
         }
 
     }
