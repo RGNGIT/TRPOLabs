@@ -5,3 +5,10 @@ C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_
 C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.csproj.CoreCompileInputs.cache
 C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.exe
 C:\Users\RGN\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.pdb
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\bin\Debug\_TRPO_Lab4.exe.config
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\bin\Debug\_TRPO_Lab4.exe
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\bin\Debug\_TRPO_Lab4.pdb
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.csprojAssemblyReference.cache
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.exe
+C:\Users\Rageon\Source\Repos\RGNGIT\TRPOLabs\_TRPO_Lab4\_TRPO_Lab4\obj\Debug\_TRPO_Lab4.pdb
