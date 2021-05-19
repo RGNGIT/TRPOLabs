@@ -23,8 +23,17 @@ namespace _TRPO_Lab4
 
         static void Main()
         {
-            double a = double.Parse(Console.ReadLine());
-            double b = double.Parse(Console.ReadLine());
+            double a = 0, b = 0;
+            try
+            {
+                a = double.Parse(Console.ReadLine());
+                b = double.Parse(Console.ReadLine());
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Ввод содержит недопустимые символы/значения");
+                Main();
+            }
             if (a < b)
             {
                 for (double i = a; i < b; i += 0.1)
